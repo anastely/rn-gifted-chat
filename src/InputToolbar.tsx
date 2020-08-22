@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
   },
   primary: {
     flexDirection: 'row',
+    // flexDirection: 'row-reverse', // for reverse send button  "input then button"
     alignItems: 'flex-end',
   },
   accessory: {

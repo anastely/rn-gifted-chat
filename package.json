@@ -1,12 +1,12 @@
 {
-  "name": "@anasntely/react-native-gifted-chat",
-  "version": "0.16.4",
+  "name": "@anastely/rn-gifted-chat",
+  "version": "0.16.3",
   "description": "The most complete chat UI for React Native",
-  "main": "lib/index.js",
+  "main": "node_modules/expo/AppEntry.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FaridSafi/react-native-gifted-chat.git"
+    "url": "git+https://github.com/anastely/rn-gifted-chat.git"
   },
   "keywords": [
     "android",
@@ -21,9 +21,9 @@
   "author": "Farid Safi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FaridSafi/react-native-gifted-chat/issues"
+    "url": "https://github.com/anastely/rn-gifted-chat/issues"
   },
-  "homepage": "https://github.com/FaridSafi/react-native-gifted-chat#readme",
+  "homepage": "https://github.com/anastely/rn-gifted-chat#readme",
   "scripts": {
     "config:dev": "json -I -f package.json -e 'this.main=\"node_modules/expo/AppEntry.js\"'",
     "config:npm": "json -I -f package.json -e 'this.main=\"lib/index.js\"'",
@@ -122,6 +122,7 @@
     }
   },
   "directories": {
+    "lib": "lib",
     "test": "tests"
   }
 }
