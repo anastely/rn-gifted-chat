@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Animated, StyleSheet } from 'react-native'
+import { Animated, I18nManager, StyleSheet } from 'react-native'
 import { TypingAnimation } from 'react-native-typing-animation'
 import { useUpdateLayoutEffect } from './hooks/useUpdateLayoutEffect'
 import Color from './Color'
@@ -95,10 +95,12 @@ const TypingIndicator = ({ isTyping }: Props) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginLeft: 8,
+    marginLeft: I18nManager.isRTL ? 0 : 8,
+    marginRight: I18nManager.isRTL ? 8 : 0,
     width: 45,
     borderRadius: 15,
     backgroundColor: Color.leftBubbleBackground,
+    alignSelf: I18nManager.isRTL ? 'flex-end' : 'flex-start',
   },
 })
 
